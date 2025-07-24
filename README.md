@@ -1,30 +1,28 @@
-# Конвертер валют из Тенге
+# Currency Converter from Tenge
 
-Приложение на Python с GUI на Tkinter для конвертации тенге
-в другие валюты по актуальному курсу с автоматическим 
-кэшированием и логированием.
+A Python application with a Tkinter GUI for converting KZT (Kazakhstani Tenge) to other currencies using real-time exchange rates, with automatic caching and logging.
 
-## Функционал
+## Features
 
-- Конвертация суммы из KZT в любую доступную валюту
-- Получение курсов с внешнего API
-- Использование кэша при отсутствии интернета
-- Логирование всех операций
-- Графический интерфейс
+- Convert amounts from KZT to any available currency
+- Fetch exchange rates from an external API
+- Use cached data when offline
+- Log all operations
+- Graphical user interface
 
 
-Также JSON-файл содержит ответ от API сервиса ExchangeRate-API, 
-в частности, данные о валютных курсах по отношению к тенге.
-Использовал апи API_URL = "https://api.exchangerate-api.com/v4/latest/KZT"
-Комменты в коде присутствуют.
-## Зависимости
+The JSON file contains the response from the ExchangeRate-API, specifically the exchange rate data relative to KZT.
+Used API: API_URL = "https://api.exchangerate-api.com/v4/latest/KZT"
+Code includes comments for clarity.
+
+## Dependencies
 
 - Python 3.7 и больше
 - `requests`
 
-## Установка
+## Installation
 
-1. Установите зависимости:
+1. Install dependencies:
    pip install requests
-2. Запуск:
+2. Run the application:
    python main.py
